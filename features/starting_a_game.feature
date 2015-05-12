@@ -10,6 +10,6 @@ Scenario: Navigate to new game page
 
 Scenario: Registering
   Given I am on new game
-  When I fill in "name" with "myname"
-  And I press "submit"
-  Then I should see "myname"
+  When I fill in "player1" with "myname"
+  And I press "Submit"
+  Then I should see "Hello player one myname"
