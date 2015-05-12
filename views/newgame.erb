@@ -1,9 +1,11 @@
+<pre><%= p @ss %></pre>
+
 <div>
   <% if @player1 == nil %>
     <form action="/newgame">   <!-- this is a PUT -->
       What's your name?
       <input type="text" name="player1">
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit">  <!-- need value so capybara knows it exists -->
     </form>
   <% else %>
     Hello player one <%= @player1 %>!
